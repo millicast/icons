@@ -4,9 +4,9 @@
   src: {{{ fontSrc }}};
 }
 
-.{{prefix}}::before,
-[class^="{{prefix}}-"]::before,
-[class*=" {{prefix}}-"]::before {
+.ml-viewer-{{prefix}}::before,
+[class^="ml-viewer-{{prefix}}-"]::before,
+[class*=" ml-viewer-{{prefix}}-"]::before {
   display: inline-block;
   font-family: {{ name }} !important;
   font-style: normal;
@@ -20,5 +20,5 @@
 }
 
 {{# each codepoints }}
-.{{ ../prefix }}-{{ @key }}::before { content: "\\{{ codepoint this }}"; }
+.ml-viewer-{{ ../prefix }}-{{ @key }}::before { content: "\\{{ codepoint this }}"; }
 {{/ each }}
