@@ -1880,6 +1880,7 @@ $bootstrap-icons-map: (
   "fuel-pump-diesel": "\f83c",
   "fuel-pump-fill": "\f83d",
   "fuel-pump": "\f83e",
+  "copy": "\f83f",
 );
 
 .bi-123::before { content: map-get($bootstrap-icons-map, "123"); }
@@ -3736,3 +3737,4 @@ $bootstrap-icons-map: (
 .bi-fuel-pump-diesel::before { content: map-get($bootstrap-icons-map, "fuel-pump-diesel"); }
 .bi-fuel-pump-fill::before { content: map-get($bootstrap-icons-map, "fuel-pump-fill"); }
 .bi-fuel-pump::before { content: map-get($bootstrap-icons-map, "fuel-pump"); }
+.bi-copy::before { content: map-get($bootstrap-icons-map, "copy"); }

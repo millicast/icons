@@ -1,8 +1,8 @@
 @font-face {
   font-display: block;
   font-family: "bootstrap-icons";
-  src: url("./fonts/bootstrap-icons.woff2?8d200481aa7f02a2d63a331fc782cfaf") format("woff2"),
-url("./fonts/bootstrap-icons.woff?8d200481aa7f02a2d63a331fc782cfaf") format("woff");
+  src: url("./fonts/bootstrap-icons.woff2?8788e002630395b50da835439ea55081") format("woff2"),
+url("./fonts/bootstrap-icons.woff?8788e002630395b50da835439ea55081") format("woff");
 }
 
 .ml-viewer-bi::before,
@@ -1874,3 +1874,4 @@ url("./fonts/bootstrap-icons.woff?8d200481aa7f02a2d63a331fc782cfaf") format("wof
 .ml-viewer-bi-fuel-pump-diesel::before { content: "\f83c"; }
 .ml-viewer-bi-fuel-pump-fill::before { content: "\f83d"; }
 .ml-viewer-bi-fuel-pump::before { content: "\f83e"; }
+.ml-viewer-bi-copy::before { content: "\f83f"; }
