@@ -1,16 +1,16 @@
 {
-  "name": "bootstrap-icons",
+  "name": "@millicast/bootstrap-icons-ml",
   "version": "1.9.1",
-  "description": "Official open source SVG icon library for Bootstrap",
+  "description": "Bootstrap Icons 1.9.1 with .ml-viewer-bi-* class prefix for the Millicast web viewer",
   "author": "mdo",
   "license": "MIT",
-  "homepage": "https://icons.getbootstrap.com/",
+  "homepage": "https://github.com/millicast/icons/tree/ml-viewer",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/twbs/icons.git"
+    "url": "git+https://github.com/millicast/icons.git"
   },
   "bugs": {
-    "url": "https://github.com/twbs/icons/issues"
+    "url": "https://github.com/millicast/icons/issues"
   },
   "keywords": [
     "bootstrap",
@@ -64,6 +64,9 @@
     "font",
     "!.DS_Store"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "hugo-bin": {
     "buildTags": "extended"
   }
