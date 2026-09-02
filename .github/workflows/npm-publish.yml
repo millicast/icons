@@ -11,6 +11,11 @@ on:
         description: 'Distribution tag to publish package with'
         required: false
         type: string
+      dryrun:
+        description: 'dryrun'
+        required: false
+        type: boolean
+        default: false
 
 jobs:
   publish:
@@ -28,11 +33,15 @@ jobs:
       - name: "npm publish"
         env:
           dist_tag: ${{ inputs.dist_tag }}
+          dryrun: ${{ inputs.dryrun }}
         shell: 'ash -e -o pipefail {0}'
         run: |
           set --
           if [ -n "${dist_tag}" ]; then
             set -- "$@" --tag "${dist_tag}"
+          fi
+          if [ "${dryrun}" = 'true' ]; then
+            set -- "$@" --dry-run
           fi
 
           npm publish --provenance --access public "$@"
