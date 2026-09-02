@@ -11,7 +11,7 @@ on:
         description: 'Distribution tag to publish package with'
         required: false
         type: string
-      dryun:
+      dryrun:
         description: 'dryrun'
         required: false
         type: boolean
